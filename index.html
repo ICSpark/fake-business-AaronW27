@@ -7,7 +7,7 @@
             What are you trying to connect?
             What's the name of the file that you're trying to connect?
         -->
-
+<link rel="stylesheet" href="style.css">
         <!-- This is what changes the font of the text, think of it as how
              the letters in a website look. -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- 2.) What do you want to name your business as? -->
-        <title> Name me! </title>
+        <title> Toy Shop </title>
     </head>
     <body>
         <div id="body-container">
@@ -30,29 +30,58 @@
                       is to see how it looks.  -->
 
                 <!-- 3.) What do you want to name your business as? -->
-                <h1 id="header-name"> Name me! </h1>
+                <h1 id="header-name"> Toy Shop </h1>
             </div>
  
             <div id="shop-container">
-
-                <!-- 5.) Add your own item! -->
                 <div class="item-container">
                     <div class="item-img">
-                        <!-- Find a photo online! -->
                         <img src="image-examples/item-example1.jpg">
                     </div>
                     <div class="item-descriptor">
-                        <!-- What do you want to name this item as? -->
                         <div class="item-name">
                             Rubber Chicken
                         </div>
-                        <!-- How much does this item cost? -->
                         <div class="item-price">$5.00</div>
+                        <button class="buy-button" 
+                        onclick="buyPage()"> Buy Now </button>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <div class="item-img">
+                        <img src="image-examples/item-example2.jpg">
+                    </div>
+                    <div class="item-descriptor">
+                        <div class="item-name">
+                            Chicken Plushy
+                        </div>
+                        <div class="item-price">$10.00</div>
+                        <button class="buy-button" 
+                        onclick="buyPage()"> Buy Now </button>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <div class="item-img">
+                        <img src="image-examples/item-example3.jpg">
+                    </div>
+                    <div class="item-descriptor">
+                        <div class="item-name">
+                            Chicken Sticker
+                        </div>
+                        <div class="item-price">$1.00</div>
+                        <button class="buy-button" 
+                        onclick="buyPage()"> Buy Now </button>
                     </div>
                 </div>
 
             </div>
+            
         </div>
+        <script>
+            function buyPage() {
+                window.location.assign("thankyou-page.html");
+            }
+          </script>
     </body>
     
 </html>
